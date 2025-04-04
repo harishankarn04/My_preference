@@ -1,4 +1,3 @@
-# Terminal Configuration Scripts
 # My Preferences
 
 This repository contains my personal configurations, scripts, and settings for various tools and environments. Each section has its own README with more details.
