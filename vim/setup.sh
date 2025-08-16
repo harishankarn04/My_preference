@@ -45,7 +45,6 @@ install_node(){
     else
       echo "Please install Node.js manually for your operating system."
     fi
-    exit 1
   else
     echo "Node.js is already installed."
   fi
