@@ -53,8 +53,8 @@ install_node(){
 # Function to remove existing .vim and .vimrc
 remove_existing_config() {
   echo "Removing existing .vim and .vimrc..."
-  rm -rf "$VIM_DIR"
-  rm -f "$VIMRC"
+  mv "$VIMRC" "$VIMRC.bak.$(date +%s)" 2>/dev/null
+  mv "$VIM_DIR" "$VIM_DIR.bak.$(date +%s)" 2>/dev/null
 }
 
 # Function to setup .vim and .vimrc
