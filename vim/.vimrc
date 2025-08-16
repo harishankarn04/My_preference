@@ -57,7 +57,13 @@ call plug#end()
 
 " Keeps native background colour
 let g:dracula_colorterm = 0 
-colorscheme dracula
+
+if filereadable(expand("~/.vim/plugged/dracula/colors/dracula.vim"))
+  colorscheme dracula
+else
+  colorscheme desert   " fallback so no error on first launch
+endif
+
 
 " Key remaping for coc.vim for C/C++
       "\ coc#refresh()
